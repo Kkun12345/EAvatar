@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EAvatar: Expression-Aware Head Avatar Reconstruction with Generative Geometry Priors</title>
@@ -82,11 +82,7 @@
       <img src="./static/images/network-7-17.png" alt="Network Architecture Overview" style="width: 100%; height: auto;" />
 
       <h2 class="subtitle has-text-centered">
-        The overview of the EAvatar rendering and reconstruction. We first learn an implicit SDF-based geometry and extract
-        the surface via DMTet. A high-quality mesh from a large-scale pretrained model is used as a generative prior to stabilize
-        initialization and guide accurate shape construction. In the second stage, we build on the initialized mesh to further refine
-        the dynamic Gaussian representation. A controllable Gaussian mechanism and a splitting strategy are introduced to improve
-        expression-driven deformation and local detail.
+        The overview of the EAvatar rendering and reconstruction. We first learn an implicit SDF-based geometry and extract the surface via DMTet. A high-quality mesh from a large-scale pretrained model is used as a generative prior to stabilize initialization and guide accurate shape construction. In the second stage, we build upon the predicted mesh to further refine the dynamic Gaussian representation. A controllable Gaussian mechanism and a splitting strategy are introduced to improve expression-driven deformation and local detail.
       </h2>
     </div>
   </div>
@@ -108,8 +104,7 @@
             We propose a novel expression-aware 3D head avatar reconstruction framework with a controllable Gaussian mechanism that enables expression-driven animation and accurate reproduction of fine-grained expressive details.
           </p>
           <p>
-            We design a Gaussian splitting strategy to enhance the geometric expressiveness in high-deformation regions. We introduce a shape initialization strategy guided by generative geometry priors, leading to improved early-stage
-stability and globally consistent geometry
+            We design a Gaussian splitting strategy to enhance the geometric expressiveness in high-deformation regions. We introduce a structure-aware geometry modeling module guided by generative priors from a large-scale generative model, which improves early-stage training stability and ensures globally consistent geometry
           </p>
           <p>
             Our method is evaluated on multiple expression-driven
